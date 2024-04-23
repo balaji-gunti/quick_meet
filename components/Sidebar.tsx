@@ -13,7 +13,7 @@ const Sidebar = () => {
       <div className="flex flex-1 flex-col gap-6">
         {sidebarLinks.map((link) => {
           const isActive =
-            pathName === link.route || pathName.startsWith(link.route);
+            pathName === link.route || pathName.startsWith(`${link.route}/`);
           return (
             <Link
               href={link.route}
@@ -21,7 +21,7 @@ const Sidebar = () => {
               className={cn(
                 "flex gap-4 items-center p-4 rounded-lg justify-start",
                 {
-                  "bg-blue-500": isActive,
+                  "bg-blue-1": isActive,
                 }
               )}
             >
