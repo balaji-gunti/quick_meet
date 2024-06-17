@@ -1,4 +1,4 @@
-"use server";
+"use server"; // This will only run on server ( server actions )
 
 import { currentUser } from "@clerk/nextjs/server";
 import { StreamClient } from '@stream-io/node-sdk';
